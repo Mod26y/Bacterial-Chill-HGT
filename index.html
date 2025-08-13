@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Why Can’t Bacteria Just Be Chill?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/theme/black.css" id="theme">
+  <style>
+    :root{--brand:#72E6B2;--accent:#FFD166;--hot:#EF476F;--muted:#8892b0}
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4 { letter-spacing: .5px }
+    .reveal section img { border:none; box-shadow:none }
+    .pill{display:inline-block;padding:.25em .6em;border-radius:999px;background:var(--brand);color:#000;font-weight:700}
+    .badge{display:inline-block;padding:.2em .5em;border:1px solid var(--muted);border-radius:6px;color:#ddd;font-size:.55em;vertical-align:middle}
+    .callout{border-left:4px solid var(--accent);padding:.6em 1em;background:rgba(255,209,102,.08);border-radius:6px}
+    .chem{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: .9em;}
+    .grid{display:grid;gap:16px;grid-template-columns: repeat(2, minmax(0,1fr))}
+    .tight li{margin: .25em 0}
+    .muted{color:#aab}
+    .big{font-size:1.5em}
+    .subtitle{color:var(--muted); font-weight:600}
+    .emoji{font-size:1.2em}
+    .footnote{font-size:.6em;color:#9aa}
+  </style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <section>
+      <h1>Why Can’t Bacteria Just Be Chill?</h1>
+      <p class="subtitle">Def not an allagory or anything 4 real</p>
+      <p class="muted">10 minutes • fast, weird, and specific <span class="badge">v1.0</span></p>
+    </section>
+
+    <section>
+      <h2>Chemistry has <em>laws</em>. Biology has <span class="pill">exceptions</span>.</h2>
+      <ul class="tight">
+        <li>Same media, same temp, same strain… wildly different outcomes.</li>
+        <li>The culprit? <strong>Lysogenic conversion</strong> & other HGT shenanigans.</li>
+        <li>Today’s thesis: tiny gene cassettes → massive phenotype flips.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>"Moron" Genes - Not an Insult, but Named Correctly</h2>
+      <ul class="tight">
+        <li><strong>Definition:</strong> Extra genes inserted by bacteriophages into a host genome, unrelated to phage replication, often adding new traits.</li>
+        <li>Name origin: In genetic parlance, a "moron" is more DNA than the phage needs for its own life cycle.</li>
+        <li>Can encode toxins, adhesion factors, or metabolic enzymes — flipping a harmless bacterium into a pathogen.</li>
+        <li>Chemistry view: a bonus catalytic module added to an existing reaction network, altering outputs drastically.</li>
+      </ul>
+      <p class="footnote">Term popularized in phage genomics; see Hendrix et al., 2000.</p>
+    </section>
+
+    <section>
+      <h2>Mechanism of the Flip</h2>
+      <div class="grid">
+        <div>
+          <h3>Lysogenic conversion</h3>
+          <ul class="tight">
+            <li>Phage integrates → brings <span class="chem">tox</span> or regulator genes.</li>
+            <li>Induction → toxin expression, often under stress (SOS).</li>
+            <li>Net: harmless → hazardous in one recombination step.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Other HGT</h3>
+          <ul class="tight">
+            <li>Conjugative plasmids (toxin islands, secretion systems).</li>
+            <li>Transposons/integrative elements drop new operons.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout">Chem view: minimal sequence insertion → new function repertoire.</div>
+    </section>
+
+    <section>
+      <h2>The Switch-Flip Hall of Fame <span class="emoji">🧬→☠️</span></h2>
+      <p class="muted">Harmless or mild strains turned nasty by phage or gene cassettes.</p>
+    </section>
+
+    <section>
+      <h2><em>Corynebacterium diphtheriae</em></h2>
+      <figure><img alt="Corynebacterium diphtheriae" src="https://commons.wikimedia.org/wiki/Special:FilePath/Corynebacterium%20diphtheriae%20Gram%20stain.jpg" style="max-height:360px"/><figcaption class="footnote">Image: <a href="https://commons.wikimedia.org/wiki/File:Corynebacterium_diphtheriae_Gram_stain.jpg">Wikimedia Commons</a></figcaption></figure>
+      <ul class="tight">
+        <li>Benign carriage is common. No phage → no diphtheria.</li>
+        <li><strong>β-phage</strong> brings the <span class="chem">tox</span> gene (DT A/B toxin).</li>
+        <li>Mechanism: A subunit ADP-ribosylates eEF-2 → protein synthesis crash.</li>
+        <li class="muted">Chem snap: one new enzyme = system-wide translation arrest.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><em>Vibrio cholerae</em></h2>
+      <figure><img alt="Vibrio cholerae TEM" src="https://commons.wikimedia.org/wiki/Special:FilePath/Vibrio%20cholerae.jpg" style="max-height:360px"/><figcaption class="footnote">Image: <a href="https://commons.wikimedia.org/wiki/File:Vibrio_cholerae.jpg">Wikimedia Commons</a></figcaption></figure>
+      <ul class="tight">
+        <li>Environmental vibrios are mostly chill.</li>
+        <li><strong>CTXφ</strong> filamentous phage encodes <span class="chem">ctxAB</span> (cholera toxin).</li>
+        <li>Toxin ADP-ribosylates Gsα → ↑cAMP → ion efflux → water loss.</li>
+        <li class="muted">Transmission hack: diarrhea disseminates both cells and phage.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><em>E. coli</em> (STEC/EHEC)</h2>
+      <figure><img alt="E. coli with phages" src="https://commons.wikimedia.org/wiki/Special:FilePath/Escherichia%20coli%20with%20phages.jpg" style="max-height:360px"/><figcaption class="footnote">Image: <a href="https://commons.wikimedia.org/wiki/File:Escherichia_coli_with_phages.jpg">Wikimedia Commons</a></figcaption></figure>
+      <ul class="tight">
+        <li>Most <em>E. coli</em> = harmless commensals.</li>
+        <li>Shiga toxin genes (<span class="chem">stx1/stx2</span>) are lambdoid phage cargo.</li>
+        <li>Induction → phage lytic cycle → toxin surge.</li>
+        <li class="muted">Chem snap: N-glycosidase cleaves 28S rRNA → translation halts.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><em>Streptococcus pyogenes</em></h2>
+      <figure><img alt="Streptococcus pyogenes" src="https://commons.wikimedia.org/wiki/Special:FilePath/Streptococcus%20pyogenes%2001.jpg" style="max-height:360px"/><figcaption class="footnote">Image: <a href="https://commons.wikimedia.org/wiki/File:Streptococcus_pyogenes_01.jpg">Wikimedia Commons</a></figcaption></figure>
+      <ul class="tight">
+        <li>Common throat colonizer; can be mild.</li>
+        <li>Prophages encode <strong>pyrogenic exotoxins</strong>.</li>
+        <li>Superantigen → massive T-cell activation → cytokine storm.</li>
+        <li class="muted">Chem snap: protein-protein binding bypasses specificity.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><em>Salmonella enterica</em> (SopEΦ)</h2>
+      <figure><img alt="Salmonella enterica Typhimurium" src="https://commons.wikimedia.org/wiki/Special:FilePath/SalmonellaNIAID.jpg" style="max-height:360px"/><figcaption class="footnote">Image: <a href="https://commons.wikimedia.org/wiki/File:SalmonellaNIAID.jpg">Wikimedia Commons</a></figcaption></figure>
+      <ul class="tight">
+        <li>Lambdoid phage <strong>SopEΦ</strong> carries <span class="chem">sopE</span>.</li>
+        <li>Activates Rac1/Cdc42 → actin remodeling → invasion.</li>
+        <li>Inflamed gut favors <em>Salmonella</em> expansion.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><em>Clostridium botulinum</em></h2>
+      <figure><img alt="Clostridium botulinum" src="https://commons.wikimedia.org/wiki/Special:FilePath/Clostridium%20botulinum.jpg" style="max-height:360px"/><figcaption class="footnote">Image: <a href="https://commons.wikimedia.org/wiki/File:Clostridium_botulinum.jpg">Wikimedia Commons</a></figcaption></figure>
+      <ul class="tight">
+        <li>Some strains gain <strong>BoNT</strong> genes via phage/plasmid.</li>
+        <li>Zn-endopeptidase cleaves SNARE proteins → paralysis.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><em>Clostridioides difficile</em></h2>
+      <figure><img alt="Clostridioides difficile" src="https://commons.wikimedia.org/wiki/Special:FilePath/Clostridium%20difficile%2001.jpg" style="max-height:360px"/><figcaption class="footnote">Image: <a href="https://commons.wikimedia.org/wiki/File:Clostridium_difficile_01.jpg">Wikimedia Commons</a></figcaption></figure>
+      <ul class="tight">
+        <li>Acquires PaLoc via mobile elements; phage can mediate transfer.</li>
+        <li>TcdA/TcdB glucosylate Rho-GTPases → cytoskeleton collapse.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><em>Vibrio parahaemolyticus</em></h2>
+      <figure><img alt="Vibrio parahaemolyticus" src="https://commons.wikimedia.org/wiki/Special:FilePath/Vibrio%20parahaemolyticus%2001.jpg" style="max-height:360px"/><figcaption class="footnote">Image: <a href="https://commons.wikimedia.org/wiki/File:Vibrio_parahaemolyticus_01.jpg">Wikimedia Commons</a></figcaption></figure>
+      <ul class="tight">
+        <li>Acquires pathogenicity islands (TDH/TRH, T3SS) via phage/plasmids.</li>
+        <li>Hemolysins form pores → ion leakage → diarrhea.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why Would a Virus Do That?</h2>
+      <ul class="tight">
+        <li>Boost colonization → more hosts for phage.</li>
+        <li>Persistence: lysogen profits as bacterium wins.</li>
+        <li>Sometimes incidental hitchhikers.</li>
+      </ul>
+      <div class="callout">Chem lens: transmission-rate optimizers, favors short term population explosion.</div>
+    </section>
+
+    <section>
+      <h2>Don’t Push the Red Button</h2>
+      <ul class="tight">
+        <li>Antibiotics can induce SOS → prophage induction → ↑ toxin.</li>
+        <li>Use phage-safe regimens, toxin blockers, quorum inhibitors.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Biofilms: Why we still need to clean things</h2>
+      <ul class="tight">
+        <li>EPS = polysaccharides + proteins + eDNA → diffusion barrier.</li>
+        <li>Phage within biofilms shuttle genes, maintain diversity.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>So… Why Can’t They Be Chill?</h2>
+      <ul class="tight">
+        <li>At nanoscale, survival is a <em>kinetic</em> competition.</li>
+        <li>Small DNA modules rewire pathways.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Field Rules for Staying Sane</h2>
+      <ol class="tight">
+        <li>Identify phage cargo before generalizing a species.</li>
+        <li>Assume induction under stress.</li>
+        <li>Biology’s inconsistencies = missing variables.</li>
+      </ol>
+      <p class="big">“Life is just chemistry with deadlines.”</p>
+    </section>
+
+  </div>
+</div>
+<script src="https://unpkg.com/reveal.js@5/dist/reveal.js"></script>
+<script src="https://unpkg.com/reveal.js@5/plugin/notes/notes.js"></script>
+<script>
+  const deck = new Reveal({
+    hash: true,
+    slideNumber: 'c/t',
+    transition: 'fade',
+    controls: true,
+    progress: true,
+    center: true,
+    width: 1280,
+    height: 720,
+    plugins: [ RevealNotes ]
+  });
+  deck.initialize();
+</script>
+</body>
+</html>
